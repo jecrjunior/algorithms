@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Pylint') {
       steps {
-        sh 'pylint ./algorithms/algorithms'
+        sh '''pylint /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms
+'''
       }
     }
     stage('Pytest') {
