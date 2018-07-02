@@ -1,0 +1,166 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.13, pytest-3.6.2, py-1.5.4, pluggy-0.6.0
+rootdir: /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA, inifile:
+collected 27 items / 12 errors
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_array.py:1: in <module>
+    from algorithms.arrays import (
+algorithms/arrays/__init__.py:2: in <module>
+    from .flatten import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/arrays/flatten.py", line 29
+E       yield from flatten_iter(element)
+E                ^
+E   SyntaxError: invalid syntax
+______________________ ERROR collecting tests/test_bit.py ______________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_bit.py:1: in <module>
+    from algorithms.bit import (
+algorithms/bit/__init__.py:2: in <module>
+    from .count_ones import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/bit/count_ones.py", line 3
+E   SyntaxError: Non-ASCII character '\xe2' in file /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/bit/count_ones.py on line 4, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+_____________________ ERROR collecting tests/test_heap.py ______________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_heap.py:1: in <module>
+    from algorithms.heap import (
+algorithms/heap/__init__.py:1: in <module>
+    from .binary_heap import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/heap/binary_heap.py", line 34
+E       class AbstractHeap(metaclass=ABCMeta):
+E                                   ^
+E   SyntaxError: invalid syntax
+_____________________ ERROR collecting tests/test_maths.py _____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_maths.py:1: in <module>
+    from algorithms.maths import (
+algorithms/maths/__init__.py:7: in <module>
+    from .is_strobogrammatic import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/maths/is_strobogrammatic.py", line 29
+E       def is_strobogrammatic2(num: str):
+E                                  ^
+E   SyntaxError: invalid syntax
+____________________ ERROR collecting tests/test_queues.py _____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_queues.py:3: in <module>
+    from algorithms.queues import (
+algorithms/queues/__init__.py:1: in <module>
+    from .queue import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/queues/queue.py", line 16
+E       class AbstractQueue(metaclass=ABCMeta):
+E                                    ^
+E   SyntaxError: invalid syntax
+____________________ ERROR collecting tests/test_search.py _____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_search.py:1: in <module>
+    from algorithms.search import (
+algorithms/search/__init__.py:10: in <module>
+    from .jump_search import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/search/jump_search.py", line 5
+E   SyntaxError: Non-ASCII character '\xe2' in file /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/search/jump_search.py on line 6, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+_____________________ ERROR collecting tests/test_sort.py ______________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_sort.py:1: in <module>
+    from algorithms.sort import (
+algorithms/sort/__init__.py:2: in <module>
+    from .bogo_sort import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py", line 6
+E   SyntaxError: Non-ASCII character '\xe2' in file /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py on line 7, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+_____________________ ERROR collecting tests/test_stack.py _____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_stack.py:1: in <module>
+    from algorithms.stack import (
+algorithms/stack/__init__.py:1: in <module>
+    from .stack import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/stack/stack.py", line 17
+E       class AbstractStack(metaclass=ABCMeta):
+E                                    ^
+E   SyntaxError: invalid syntax
+____________________ ERROR collecting tests/test_strings.py ____________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/test_strings.py:1: in <module>
+    from algorithms.strings import (
+algorithms/strings/__init__.py:14: in <module>
+    from .multiply_strings import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/strings/multiply_strings.py", line 15
+E       def multiply(num1:"str", num2:"str")->"str":
+E                        ^
+E   SyntaxError: invalid syntax
+_____________________ ERROR collecting tests/test_tree.py ______________________
+ImportError while importing test module '/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/tests/test_tree.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests/test_tree.py:1: in <module>
+    from algorithms.tree.traversal import (
+E   ImportError: No module named tree.traversal
+_____________________ ERROR collecting tests/test_unix.py ______________________
+ImportError while importing test module '/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/tests/test_unix.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests/test_unix.py:1: in <module>
+    from algorithms.unix import (
+algorithms/unix/__init__.py:1: in <module>
+    from .path.join_with_slash import *
+E   ImportError: No module named path.join_with_slash
+_________________ ERROR collecting tests/graph/test_topsort.py _________________
+/usr/lib/python2.7/site-packages/_pytest/python.py:468: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/site-packages/_pytest/assertion/rewrite.py:216: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+tests/graph/test_topsort.py:1: in <module>
+    from algorithms.sort import (
+algorithms/sort/__init__.py:2: in <module>
+    from .bogo_sort import *
+E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py", line 6
+E   SyntaxError: Non-ASCII character '\xe2' in file /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py on line 7, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+!!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 12 error in 3.05 seconds ===========================
