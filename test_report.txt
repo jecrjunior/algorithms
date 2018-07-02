@@ -163,4 +163,4 @@ algorithms/sort/__init__.py:2: in <module>
 E     File "/var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py", line 6
 E   SyntaxError: Non-ASCII character '\xe2' in file /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms/sort/bogo_sort.py on line 7, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
 !!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
-=========================== 12 error in 3.54 seconds ===========================
+=========================== 12 error in 2.75 seconds ===========================
