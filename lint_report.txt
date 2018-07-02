@@ -2002,6 +2002,6 @@ R:  1, 0: Similar lines in 2 files
     c2.next = f
     f.next = g (duplicate-code)
 
------------------------------------
-Your code has been rated at 5.22/10
+------------------------------------------------------------------
+Your code has been rated at 5.22/10 (previous run: 5.22/10, +0.00)
 
