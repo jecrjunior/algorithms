@@ -16,7 +16,10 @@ pipeline {
  
 
 
- | pylint /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms > lint_report.txt | exit 0'''
+'''
+        sh 'pylint /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/algorithms > lint_report.txt '
+        sh 'deactivate'
+        sh 'exit 0'
       }
     }
     stage('Pytest') {
