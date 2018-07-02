@@ -1,6 +1,7 @@
 ************* Module algorithms.arrays
 C:  1, 0: Missing module docstring (missing-docstring)
 W:  1, 0: Wildcard import delete_nth (wildcard-import)
+E:  2, 0: Unable to import 'algorithms.arrays.flatten' (import-error)
 W:  2, 0: Wildcard import flatten (wildcard-import)
 W:  3, 0: Wildcard import garage (wildcard-import)
 W:  4, 0: Wildcard import josephus (wildcard-import)
@@ -26,7 +27,7 @@ C: 13, 0: Missing function docstring (missing-docstring)
 C: 22, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 22, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.arrays.flatten
-C: 10, 0: Missing function docstring (missing-docstring)
+E: 29, 0: invalid syntax (<string>, line 29) (syntax-error)
 ************* Module algorithms.arrays.garage
 C: 27, 0: Trailing whitespace (trailing-whitespace)
 C: 35, 0: Missing function docstring (missing-docstring)
@@ -50,7 +51,8 @@ C: 21, 9: Comparison to None should be 'expr is None' (singleton-comparison)
 C: 19, 0: Missing function docstring (missing-docstring)
 C: 21, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.arrays.merge_intervals
-R: 53, 0: Disallow trailing comma tuple (trailing-comma-tuple)
+C: 64, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:  6, 0: Old-style class defined. (old-style-class)
 ************* Module algorithms.arrays.missing_ranges
 C:  7, 0: Argument name "lo" doesn't conform to snake_case naming style (invalid-name)
 C:  7, 0: Argument name "hi" doesn't conform to snake_case naming style (invalid-name)
@@ -60,8 +62,8 @@ C: 12, 8: Variable name "n" doesn't conform to snake_case naming style (invalid-
 C: 20, 0: Trailing whitespace (trailing-whitespace)
 C: 11, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.arrays.n_sum
-C: 32, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 W: 63, 4: Redefining name 'n_sum' from outer scope (line 32) (redefined-outer-name)
+C: 32, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 49, 4: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
 C: 49, 4: Argument name "b" doesn't conform to snake_case naming style (invalid-name)
 C: 49, 4: Missing function docstring (missing-docstring)
@@ -156,8 +158,8 @@ C: 20, 0: Argument name "A" doesn't conform to snake_case naming style (invalid-
 C: 20, 0: Argument name "B" doesn't conform to snake_case naming style (invalid-name)
 C: 20, 0: Argument name "C" doesn't conform to snake_case naming style (invalid-name)
 C: 20, 0: Missing function docstring (missing-docstring)
-C: 22, 4: Missing function docstring (missing-docstring)
 W: 23, 8: Redefining built-in 'sum' (redefined-builtin)
+C: 22, 4: Missing function docstring (missing-docstring)
 C: 29,33: Comparison should be len(constructed_sofar) == 3 (misplaced-comparison-constant)
 C: 33, 4: Missing function docstring (missing-docstring)
 C: 35,11: Comparison should be len(constructed_sofar) == 1 (misplaced-comparison-constant)
@@ -208,6 +210,7 @@ C: 25,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as
 C: 25,33: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 C: 28,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 ************* Module algorithms.backtrack.permute
+C: 49, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 R: 21, 4: Unnecessary "else" after "return" (no-else-return)
 C: 44, 0: Missing function docstring (missing-docstring)
 C: 45, 4: Missing function docstring (missing-docstring)
@@ -217,12 +220,16 @@ C: 15, 0: Missing function docstring (missing-docstring)
 C: 17, 8: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 19,12: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.backtrack.subsets
+C: 63, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 64, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 26, 4: Missing function docstring (missing-docstring)
 W: 51,-1: String statement has no effect (pointless-string-statement)
 C: 55, 0: Missing function docstring (missing-docstring)
 W: 55,15: Unused argument 'self' (unused-argument)
 C: 62, 0: Constant name "test" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module algorithms.backtrack.subsets_unique
+C: 41, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 42, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 21, 0: Missing function docstring (missing-docstring)
 C: 23, 4: Missing function docstring (missing-docstring)
 C: 40, 0: Constant name "test" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -368,14 +375,15 @@ grid = [[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]
 C: 42, 0: Exactly one space required after comma
 grid = [[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]
                                         ^ (bad-whitespace)
+C: 43, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 W:  7,-1: String statement has no effect (pointless-string-statement)
-C:  9, 0: Missing function docstring (missing-docstring)
 W:  9,22: Redefining name 'grid' from outer scope (line 42) (redefined-outer-name)
+C:  9, 0: Missing function docstring (missing-docstring)
 C: 16, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 C: 23, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-C: 30, 0: Missing function docstring (missing-docstring)
 W: 30, 8: Redefining name 'grid' from outer scope (line 42) (redefined-outer-name)
+C: 30, 0: Missing function docstring (missing-docstring)
 C: 31, 4: Variable name "q" doesn't conform to snake_case naming style (invalid-name)
 C: 34,15: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
 C: 42, 0: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -433,6 +441,10 @@ C: 10, 0: Argument name "a" doesn't conform to snake_case naming style (invalid-
 C: 10, 0: Argument name "b" doesn't conform to snake_case naming style (invalid-name)
 C: 10, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.bit.count_ones
+W:  3, 0: Cannot decode using encoding "ascii", unexpected byte at position 22 (invalid-encoded-data)
+W:  6, 0: Cannot decode using encoding "ascii", unexpected byte at position 32 (invalid-encoded-data)
+W: 18, 0: Cannot decode using encoding "ascii", unexpected byte at position 28 (invalid-encoded-data)
+W: 26, 0: Cannot decode using encoding "ascii", unexpected byte at position 28 (invalid-encoded-data)
 C: 17, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 25, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.bit.find_difference
@@ -456,8 +468,8 @@ C: 35, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.bit.insert_bit
 W: 29,-1: String statement has no effect (pointless-string-statement)
 C: 30, 0: Missing function docstring (missing-docstring)
-C: 39, 0: Missing function docstring (missing-docstring)
 W: 39,32: Redefining built-in 'len' (redefined-builtin)
+C: 39, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.bit.power_of_two
 C:  4, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.bit.remove_bit
@@ -486,11 +498,16 @@ W: 80,-1: String statement has no effect (pointless-string-statement)
 W: 15,-1: String statement has no effect (pointless-string-statement)
 C: 16, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.graph.Transitive_Closure_DFS
+C: 40, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 51, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Module name "Transitive_Closure_DFS" doesn't conform to snake_case naming style (invalid-name)
 C:  1, 0: Missing module docstring (missing-docstring)
 C: 11, 8: Attribute name "tc" doesn't conform to snake_case naming style (invalid-name)
 C:  5, 8: Attribute name "V" doesn't conform to snake_case naming style (invalid-name)
 C:  2, 0: Missing class docstring (missing-docstring)
+C:  2, 0: Old-style class defined. (old-style-class)
+W: 11,50: Unused variable 'i' (unused-variable)
+W: 11,26: Unused variable 'j' (unused-variable)
 C: 14, 4: Argument name "u" doesn't conform to snake_case naming style (invalid-name)
 C: 14, 4: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 14, 4: Missing method docstring (missing-docstring)
@@ -511,86 +528,12 @@ C: 20, 4: Variable name "q" doesn't conform to snake_case naming style (invalid-
 C: 23, 8: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 29,12: Variable name "u" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.graph.check_digraph_strongly_connected
-W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C:  4, 0: Exactly one space required after comma
-	def __init__(self,v):
-                  ^ (bad-whitespace)
-W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C:  8, 0: Exactly one space required after comma
-	def add_edge(self,u,v):
-                  ^ (bad-whitespace)
-C:  8, 0: Exactly one space required after comma
-	def add_edge(self,u,v):
-                    ^ (bad-whitespace)
-W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 13, 0: Exactly one space required after comma
-		self.dfs_util(0,visited)
-                 ^ (bad-whitespace)
-W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 18, 0: Exactly one space required after comma
-	def dfs_util(self,i,visited):
-                  ^ (bad-whitespace)
-C: 18, 0: Exactly one space required after comma
-	def dfs_util(self,i,visited):
-                    ^ (bad-whitespace)
-W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 21, 0: Unnecessary parens after 'not' keyword (superfluous-parens)
-W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 22, 0: Exactly one space required after comma
-				self.dfs_util(u,visited)
-                   ^ (bad-whitespace)
-W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 28, 0: Exactly one space required after comma
-				g.add_edge(j,i)
-                ^ (bad-whitespace)
-W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
-C: 47, 0: No space allowed before bracket
-print ("Yes") if g1.is_sc() else print("No")
-      ^ (bad-whitespace)
-C: 48, 0: Trailing whitespace (trailing-whitespace)
-C: 53, 0: No space allowed before bracket
-print ("Yes") if g2.is_sc() else print("No")
-      ^ (bad-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
-C:  5, 2: Attribute name "v" doesn't conform to snake_case naming style (invalid-name)
-C:  3, 0: Missing class docstring (missing-docstring)
-C:  8, 1: Argument name "u" doesn't conform to snake_case naming style (invalid-name)
-C:  8, 1: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
-C:  8, 1: Missing method docstring (missing-docstring)
-C: 11, 1: Missing method docstring (missing-docstring)
-C: 18, 1: Missing method docstring (missing-docstring)
-C: 20, 6: Variable name "u" doesn't conform to snake_case naming style (invalid-name)
-C: 24, 1: Missing method docstring (missing-docstring)
-C: 25, 2: Variable name "g" doesn't conform to snake_case naming style (invalid-name)
-C: 32, 1: Missing method docstring (missing-docstring)
-C: 34, 3: Variable name "gr" doesn't conform to snake_case naming style (invalid-name)
-C: 40, 0: Constant name "g1" doesn't conform to UPPER_CASE naming style (invalid-name)
-W: 47, 0: Expression "print('Yes') if g1.is_sc() else print('No')" is assigned to nothing (expression-not-assigned)
-C: 49, 0: Constant name "g2" doesn't conform to UPPER_CASE naming style (invalid-name)
-W: 53, 0: Expression "print('Yes') if g2.is_sc() else print('No')" is assigned to nothing (expression-not-assigned)
+E: 47, 0: invalid syntax (<string>, line 47) (syntax-error)
 ************* Module algorithms.graph.clone_graph
 W:  1, 0: Anomalous backslash in string: '\_'. String constant might be missing an r prefix. (anomalous-backslash-in-string)
 C: 33, 0: Missing class docstring (missing-docstring)
+C: 33, 0: Old-style class defined. (old-style-class)
+C: 34, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 R: 33, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 40, 0: Missing function docstring (missing-docstring)
 R: 40, 0: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
@@ -604,6 +547,8 @@ C: 30, 0: Trailing whitespace (trailing-whitespace)
 C: 47, 0: Wrong continued indentation before block.
            is_in_cycle(graph, traversal_states, vertex)):
            ^|   | (bad-continuation)
+C: 51, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 52, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 11, 0: Missing class docstring (missing-docstring)
 C: 17, 0: Constant name "example_graph_with_cycle" doesn't conform to UPPER_CASE naming style (invalid-name)
 C: 24, 0: Constant name "example_graph_without_cycle" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -613,6 +558,9 @@ C: 43, 0: Missing function docstring (missing-docstring)
 C: 33, 0: Line too long (110/100) (line-too-long)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  3, 0: Missing class docstring (missing-docstring)
+C:  3, 0: Old-style class defined. (old-style-class)
+W:  7,29: Unused variable 'column' (unused-variable)
+W:  7,60: Unused variable 'row' (unused-variable)
 C:  9, 4: Missing method docstring (missing-docstring)
 C: 11,12: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 12,38: Comparison to False should be 'not expr' or 'expr is False' (singleton-comparison)
@@ -622,10 +570,7 @@ C: 32,16: Variable name "v" doesn't conform to snake_case naming style (invalid-
 C: 33,44: Comparison to False should be 'not expr' or 'expr is False' (singleton-comparison)
 W: 23,12: Unused variable 'count' (unused-variable)
 ************* Module algorithms.graph.find_all_cliques
-C:  1, 0: Missing module docstring (missing-docstring)
-C:  9, 0: Missing function docstring (missing-docstring)
-C: 10, 4: Missing function docstring (missing-docstring)
-C: 24, 4: Missing function docstring (missing-docstring)
+E: 11, 0: invalid syntax (<string>, line 11) (syntax-error)
 ************* Module algorithms.graph.find_path
 C:  2, 0: Wrong continued indentation (add 2 spaces).
          'B': ['C', 'D'],
@@ -643,7 +588,9 @@ C:  6, 0: Wrong continued indentation (add 2 spaces).
          'F': ['C']}
          ^ | (bad-continuation)
 C: 11, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 24, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 25, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 52, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  1, 0: Constant name "myGraph" doesn't conform to UPPER_CASE naming style (invalid-name)
 W:  9, 0: Dangerous default value [] as argument (dangerous-default-value)
@@ -660,8 +607,8 @@ C: 80, 0: Trailing whitespace (trailing-whitespace)
 C:106, 0: Trailing whitespace (trailing-whitespace)
 C:  6, 0: Missing class docstring (missing-docstring)
 C: 11, 4: Missing method docstring (missing-docstring)
-C: 47, 8: Attribute name "nf" doesn't conform to snake_case naming style (invalid-name)
 C: 48, 8: Attribute name "nt" doesn't conform to snake_case naming style (invalid-name)
+C: 47, 8: Attribute name "nf" doesn't conform to snake_case naming style (invalid-name)
 C: 45, 0: Missing class docstring (missing-docstring)
 C: 58, 0: Missing class docstring (missing-docstring)
 W: 59, 4: Dangerous default value {} as argument (dangerous-default-value)
@@ -673,6 +620,9 @@ C: 81, 4: Missing method docstring (missing-docstring)
 C: 98, 8: Attribute name "tc" doesn't conform to snake_case naming style (invalid-name)
 C: 92, 8: Attribute name "V" doesn't conform to snake_case naming style (invalid-name)
 C: 89, 0: Missing class docstring (missing-docstring)
+C: 89, 0: Old-style class defined. (old-style-class)
+W: 98,50: Unused variable 'i' (unused-variable)
+W: 98,26: Unused variable 'j' (unused-variable)
 C:101, 4: Argument name "u" doesn't conform to snake_case naming style (invalid-name)
 C:101, 4: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
 C:101, 4: Missing method docstring (missing-docstring)
@@ -681,8 +631,8 @@ R: 89, 0: Too few public methods (1/2) (too-few-public-methods)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  3, 0: Constant name "my_chain" doesn't conform to UPPER_CASE naming style (invalid-name)
 R: 10, 0: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-C: 18, 0: Missing function docstring (missing-docstring)
 W: 20, 4: Redefining name 'next_state' from outer scope (line 18) (redefined-outer-name)
+C: 18, 0: Missing function docstring (missing-docstring)
 C: 23, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.graph.minimum_spanning_tree
 C:  3, 0: Trailing whitespace (trailing-whitespace)
@@ -696,16 +646,21 @@ C: 94, 0: Trailing whitespace (trailing-whitespace)
 C:108, 0: Trailing whitespace (trailing-whitespace)
 C:130, 0: Final newline missing (missing-final-newline)
 C:  1, 0: Missing module docstring (missing-docstring)
-C: 11, 8: Attribute name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 10, 8: Attribute name "u" doesn't conform to snake_case naming style (invalid-name)
+C: 11, 8: Attribute name "v" doesn't conform to snake_case naming style (invalid-name)
 C:  8, 0: Missing class docstring (missing-docstring)
+C:  8, 0: Old-style class defined. (old-style-class)
+W:  9,23: Redefining name 'u' from outer scope (line 124) (redefined-outer-name)
 W:  9,29: Redefining name 'weight' from outer scope (line 124) (redefined-outer-name)
 W:  9,26: Redefining name 'v' from outer scope (line 124) (redefined-outer-name)
-W:  9,23: Redefining name 'u' from outer scope (line 124) (redefined-outer-name)
+C:  9, 4: Argument name "u" doesn't conform to snake_case naming style (invalid-name)
+C:  9, 4: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
 R:  8, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 15, 0: Missing class docstring (missing-docstring)
-W: 16,23: Redefining name 'n' from outer scope (line 118) (redefined-outer-name)
+C: 15, 0: Old-style class defined. (old-style-class)
 W: 22,12: Redefining name 'i' from outer scope (line 123) (redefined-outer-name)
+W: 16,23: Redefining name 'n' from outer scope (line 118) (redefined-outer-name)
+C: 16, 4: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 25, 4: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
 C: 25, 4: Argument name "b" doesn't conform to snake_case naming style (invalid-name)
 C: 25, 4: Missing method docstring (missing-docstring)
@@ -713,12 +668,12 @@ E: 31,12: Instance of 'DisjointSet' has no 'findSet' member (no-member)
 E: 32,12: Instance of 'DisjointSet' has no 'findSet' member (no-member)
 C: 42, 4: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
 C: 42, 4: Missing method docstring (missing-docstring)
+W: 53,15: Redefining name 'edges' from outer scope (line 120) (redefined-outer-name)
+W: 53,12: Redefining name 'n' from outer scope (line 118) (redefined-outer-name)
+W: 53,22: Redefining name 'ds' from outer scope (line 119) (redefined-outer-name)
 C: 53, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 53, 0: Argument name "ds" doesn't conform to snake_case naming style (invalid-name)
 C: 53, 0: Missing function docstring (missing-docstring)
-W: 53,12: Redefining name 'n' from outer scope (line 118) (redefined-outer-name)
-W: 53,22: Redefining name 'ds' from outer scope (line 119) (redefined-outer-name)
-W: 53,15: Redefining name 'edges' from outer scope (line 120) (redefined-outer-name)
 ************* Module algorithms.graph.path_between_two_vertices_in_digraph
 W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
 C:  4, 0: Exactly one space required after comma
@@ -793,12 +748,14 @@ C: 40, 0: Exactly one space required after assignment
 u =1; v = 3
   ^ (bad-whitespace)
 C: 41, 0: Trailing whitespace (trailing-whitespace)
+C: 43, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 43, 0: Exactly one space required after comma
     print("There is a path from %d to %d" % (u,v))
                                               ^ (bad-whitespace)
 C: 44, 0: No space allowed before :
 else :
      ^ (bad-whitespace)
+C: 45, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 45, 0: Exactly one space required after comma
     print("There is no path from %d to %d" % (u,v))
                                                ^ (bad-whitespace)
@@ -806,24 +763,28 @@ C: 46, 0: Trailing whitespace (trailing-whitespace)
 C: 48, 0: No space allowed before :
 if g.is_reachable(u, v) :
                         ^ (bad-whitespace)
+C: 49, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 49, 0: Exactly one space required after comma
     print("There is a path from %d to %d" % (u,v))
                                               ^ (bad-whitespace)
 C: 50, 0: No space allowed before :
 else :
      ^ (bad-whitespace)
+C: 51, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 51, 0: Exactly one space required after comma
     print("There is no path from %d to %d" % (u,v))
                                                ^ (bad-whitespace)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  5, 2: Attribute name "v" doesn't conform to snake_case naming style (invalid-name)
 C:  3, 0: Missing class docstring (missing-docstring)
+C:  3, 0: Old-style class defined. (old-style-class)
 W:  4,19: Redefining name 'v' from outer scope (line 40) (redefined-outer-name)
+C:  4, 1: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
+W:  9,19: Redefining name 'u' from outer scope (line 40) (redefined-outer-name)
+W:  9,21: Redefining name 'v' from outer scope (line 40) (redefined-outer-name)
 C:  9, 1: Argument name "u" doesn't conform to snake_case naming style (invalid-name)
 C:  9, 1: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
 C:  9, 1: Missing method docstring (missing-docstring)
-W:  9,21: Redefining name 'v' from outer scope (line 40) (redefined-outer-name)
-W:  9,19: Redefining name 'u' from outer scope (line 40) (redefined-outer-name)
 C: 12, 1: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 C: 12, 1: Argument name "y" doesn't conform to snake_case naming style (invalid-name)
 C: 12, 1: Missing method docstring (missing-docstring)
@@ -841,6 +802,7 @@ C: 47, 0: Constant name "u" doesn't conform to UPPER_CASE naming style (invalid-
 C: 47, 7: More than one statement on a single line (multiple-statements)
 C: 47, 7: Constant name "v" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module algorithms.graph.satisfiability
+C:126, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 W: 15,-1: String statement has no effect (pointless-string-statement)
 C: 16, 0: Constant name "formula" doesn't conform to UPPER_CASE naming style (invalid-name)
 C: 23, 0: Argument name "v" doesn't conform to snake_case naming style (invalid-name)
@@ -855,8 +817,8 @@ C: 57,12: Variable name "u" doesn't conform to snake_case naming style (invalid-
 C: 60, 8: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 68, 8: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 W: 77,16: Redefining name 'formula' from outer scope (line 16) (redefined-outer-name)
-C: 93, 0: Missing function docstring (missing-docstring)
 W: 93,14: Redefining name 'formula' from outer scope (line 16) (redefined-outer-name)
+C: 93, 0: Missing function docstring (missing-docstring)
 C:123, 4: Constant name "result" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module algorithms.graph.tarjan
 C: 40, 0: Line too long (103/100) (line-too-long)
@@ -876,57 +838,25 @@ R:  8, 0: Too few public methods (1/2) (too-few-public-methods)
 C: 66, 0: Trailing newlines (trailing-newlines)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  1, 0: Constant name "graph" doesn't conform to UPPER_CASE naming style (invalid-name)
-C: 13, 0: Missing function docstring (missing-docstring)
 W: 13,17: Redefining name 'graph' from outer scope (line 1) (redefined-outer-name)
+C: 13, 0: Missing function docstring (missing-docstring)
 C: 19,16: Variable name "nextNode" doesn't conform to snake_case naming style (invalid-name)
-C: 27, 0: Missing function docstring (missing-docstring)
 W: 27,17: Redefining name 'graph' from outer scope (line 1) (redefined-outer-name)
+C: 27, 0: Missing function docstring (missing-docstring)
 C: 33,16: Variable name "nextNode" doesn't conform to snake_case naming style (invalid-name)
-C: 40, 0: Missing function docstring (missing-docstring)
 W: 40,27: Redefining name 'graph' from outer scope (line 1) (redefined-outer-name)
+C: 40, 0: Missing function docstring (missing-docstring)
 C: 44, 8: Variable name "nextNode" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.heap
 C:  1, 0: Missing module docstring (missing-docstring)
+E:  1, 0: Unable to import 'algorithms.heap.binary_heap' (import-error)
 W:  1, 0: Wildcard import binary_heap (wildcard-import)
 W:  2, 0: Wildcard import skyline (wildcard-import)
 W:  3, 0: Wildcard import sliding_window_max (wildcard-import)
 ************* Module algorithms.heap.binary_heap
-C: 45, 0: Exactly one space required after comma
-    def perc_down(self,i):
-                      ^ (bad-whitespace)
-C: 48, 0: Exactly one space required after comma
-    def min_child(self,i):
-                      ^ (bad-whitespace)
-C: 51, 0: Exactly one space required after comma
-    def remove_min(self,i):
-                       ^ (bad-whitespace)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-W:  1, 0: Anomalous backslash in string: '\ '. String constant might be missing an r prefix. (anomalous-backslash-in-string)
-C: 39, 4: Missing method docstring (missing-docstring)
-C: 42, 4: Missing method docstring (missing-docstring)
-C: 45, 4: Missing method docstring (missing-docstring)
-C: 48, 4: Missing method docstring (missing-docstring)
-C: 51, 4: Missing method docstring (missing-docstring)
-C: 55, 8: Attribute name "currentSize" doesn't conform to snake_case naming style (invalid-name)
-C: 53, 0: Missing class docstring (missing-docstring)
-W: 54, 4: __init__ method from base class 'AbstractHeap' is not called (super-init-not-called)
-W: 74,-1: String statement has no effect (pointless-string-statement)
-W: 82,-1: String statement has no effect (pointless-string-statement)
-R: 84, 8: Unnecessary "else" after "return" (no-else-return)
-R: 88,12: Unnecessary "else" after "return" (no-else-return)
-W:108,-1: String statement has no effect (pointless-string-statement)
-W:109, 4: Parameters differ from overridden 'remove_min' method (arguments-differ)
+E: 34, 0: invalid syntax (<string>, line 34) (syntax-error)
 ************* Module algorithms.heap.merge_sorted_k_lists
+E:  7, 0: Unable to import 'queue' (import-error)
 C: 11, 0: Missing class docstring (missing-docstring)
 R: 11, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 17, 0: Missing function docstring (missing-docstring)
@@ -939,7 +869,6 @@ C: 33, 0: Missing function docstring (missing-docstring)
 C: 36, 4: Variable name "q" doesn't conform to snake_case naming style (invalid-name)
 W: 68,-1: String statement has no effect (pointless-string-statement)
 ************* Module algorithms.heap.skyline
-R: 59, 0: Disallow trailing comma tuple (trailing-comma-tuple)
 C: 12, 0: Line too long (103/100) (line-too-long)
 C: 23, 0: Line too long (104/100) (line-too-long)
 C: 25, 0: Line too long (124/100) (line-too-long)
@@ -958,24 +887,21 @@ W:  6, 0: Wildcard import is_cyclic (wildcard-import)
 W:  7, 0: Wildcard import merge_two_list (wildcard-import)
 W:  8, 0: Wildcard import is_palindrome (wildcard-import)
 ************* Module algorithms.linkedlist.add_two_numbers
-C: 17, 0: Missing class docstring (missing-docstring)
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-C: 23, 0: Missing function docstring (missing-docstring)
-W: 26, 4: Redefining built-in 'sum' (redefined-builtin)
-C: 66, 0: Argument name "l" doesn't conform to snake_case naming style (invalid-name)
-C: 83, 4: Missing method docstring (missing-docstring)
-C: 89, 4: Missing method docstring (missing-docstring)
-C:126, 4: Missing method docstring (missing-docstring)
+E: 23, 0: invalid syntax (<string>, line 23) (syntax-error)
 ************* Module algorithms.linkedlist.copy_random_pointer
 W:  9, 0: TODO: This requires to be rewritten -- commenting it out for now (fixme)
 ************* Module algorithms.linkedlist.delete_node
 C: 12, 0: Missing class docstring (missing-docstring)
+C: 12, 0: Old-style class defined. (old-style-class)
+C: 13, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 R: 12, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 18, 0: Missing function docstring (missing-docstring)
 C: 25, 0: Missing class docstring (missing-docstring)
 C: 27, 4: Missing method docstring (missing-docstring)
 ************* Module algorithms.linkedlist.first_cyclic_node
 C: 12, 0: Missing class docstring (missing-docstring)
+C: 12, 0: Old-style class defined. (old-style-class)
+C: 14, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 R: 12, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 40, 0: Missing class docstring (missing-docstring)
 C: 42, 4: Missing method docstring (missing-docstring)
@@ -998,6 +924,8 @@ C: 84, 8: Variable name "e" doesn't conform to snake_case naming style (invalid-
 C: 85, 8: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.linkedlist.is_cyclic
 C:  7, 0: Missing class docstring (missing-docstring)
+C:  7, 0: Old-style class defined. (old-style-class)
+C:  9, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 R:  7, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module algorithms.linkedlist.is_palindrome
 C:  1, 0: Missing module docstring (missing-docstring)
@@ -1009,10 +937,14 @@ C: 83,12: Consider using enumerate instead of iterating with range and len (cons
 ************* Module algorithms.linkedlist.is_sorted
 C: 11, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.linkedlist.kth_to_last
+C: 71, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C:117, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  1, 0: Missing class docstring (missing-docstring)
+C:  1, 0: Old-style class defined. (old-style-class)
 R:  1, 0: Too few public methods (0/2) (too-few-public-methods)
 W: 19,11: Use of eval (eval-used)
+W: 15,33: Unused variable 'n' (unused-variable)
 C: 35, 4: Variable name "d" doesn't conform to snake_case naming style (invalid-name)
 C: 52, 4: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
 C: 53, 4: Variable name "p2" doesn't conform to snake_case naming style (invalid-name)
@@ -1030,9 +962,9 @@ C: 81, 4: Variable name "d" doesn't conform to snake_case naming style (invalid-
 C: 82, 4: Variable name "c2" doesn't conform to snake_case naming style (invalid-name)
 C: 83, 4: Variable name "f" doesn't conform to snake_case naming style (invalid-name)
 C: 84, 4: Variable name "g" doesn't conform to snake_case naming style (invalid-name)
-C: 98, 4: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
-C:106, 4: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
-C:114, 4: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C: 98,29: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:106,29: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
+C:114,29: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.linkedlist.linkedlist
 C:  1, 0: Missing module docstring (missing-docstring)
 C: 14, 0: Missing class docstring (missing-docstring)
@@ -1041,6 +973,8 @@ C: 21, 0: Missing class docstring (missing-docstring)
 R: 21, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module algorithms.linkedlist.merge_two_list
 C:  9, 0: Missing class docstring (missing-docstring)
+C:  9, 0: Old-style class defined. (old-style-class)
+C: 11, 4: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 R:  9, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 15, 0: Argument name "l1" doesn't conform to snake_case naming style (invalid-name)
 C: 15, 0: Argument name "l2" doesn't conform to snake_case naming style (invalid-name)
@@ -1050,7 +984,9 @@ C: 29, 0: Argument name "l2" doesn't conform to snake_case naming style (invalid
 C: 29, 0: Missing function docstring (missing-docstring)
 R: 32, 4: Unnecessary "else" after "return" (no-else-return)
 ************* Module algorithms.linkedlist.partition
+C: 27, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 15, 0: Missing class docstring (missing-docstring)
+C: 15, 0: Old-style class defined. (old-style-class)
 R: 15, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 21, 0: Missing function docstring (missing-docstring)
 C: 30, 0: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
@@ -1067,8 +1003,10 @@ C: 61, 4: Variable name "g" doesn't conform to snake_case naming style (invalid-
 C:  2, 0: No space allowed around keyword argument assignment
     def __init__(self, val = None):
                            ^ (bad-whitespace)
+C: 42, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  1, 0: Missing class docstring (missing-docstring)
+C:  1, 0: Old-style class defined. (old-style-class)
 R:  1, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 36, 0: Missing function docstring (missing-docstring)
 C: 46, 0: Constant name "a1" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -1102,6 +1040,7 @@ W:  3, 0: Wildcard import extended_gcd (wildcard-import)
 W:  4, 0: Wildcard import factorial (wildcard-import)
 W:  5, 0: Wildcard import gcd (wildcard-import)
 W:  6, 0: Wildcard import generate_strobogrammtic (wildcard-import)
+E:  7, 0: Unable to import 'algorithms.maths.is_strobogrammatic' (import-error)
 W:  7, 0: Wildcard import is_strobogrammatic (wildcard-import)
 W:  8, 0: Wildcard import modular_exponential (wildcard-import)
 W:  9, 0: Wildcard import next_perfect_square (wildcard-import)
@@ -1165,10 +1104,13 @@ C: 20, 0: Missing function docstring (missing-docstring)
 C: 59, 0: Argument name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 59, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.maths.is_strobogrammatic
-C: 21, 8: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+E: 29, 0: invalid syntax (<string>, line 29) (syntax-error)
 ************* Module algorithms.maths.modular_exponential
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module algorithms.maths.next_bigger
+W: 12, 0: Cannot decode using encoding "ascii", unexpected byte at position 39 (invalid-encoded-data)
+W: 15, 0: Cannot decode using encoding "ascii", unexpected byte at position 33 (invalid-encoded-data)
+W: 17, 0: Cannot decode using encoding "ascii", unexpected byte at position 26 (invalid-encoded-data)
 C:  2, 0: Trailing whitespace (trailing-whitespace)
 C:  3, 0: Trailing whitespace (trailing-whitespace)
 C:  5, 0: Trailing whitespace (trailing-whitespace)
@@ -1258,6 +1200,7 @@ C: 12, 0: Argument name "b" doesn't conform to snake_case naming style (invalid-
 C: 12, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.queues
 C:  1, 0: Missing module docstring (missing-docstring)
+E:  1, 0: Unable to import 'algorithms.queues.queue' (import-error)
 W:  1, 0: Wildcard import queue (wildcard-import)
 W:  2, 0: Wildcard import max_sliding_window (wildcard-import)
 W:  3, 0: Wildcard import reconstruct_queue (wildcard-import)
@@ -1274,18 +1217,12 @@ C: 25, 4: Constant name "m" doesn't conform to UPPER_CASE naming style (invalid-
 ************* Module algorithms.queues.priority_queue
 C: 56, 0: Trailing newlines (trailing-newlines)
 C:  9, 0: Missing class docstring (missing-docstring)
+C:  9, 0: Old-style class defined. (old-style-class)
 R:  9, 0: Too few public methods (1/2) (too-few-public-methods)
 C: 18, 0: Missing class docstring (missing-docstring)
+C: 18, 0: Old-style class defined. (old-style-class)
 ************* Module algorithms.queues.queue
-C: 16, 0: Missing class docstring (missing-docstring)
-C: 24, 4: Missing method docstring (missing-docstring)
-C: 28, 4: Missing method docstring (missing-docstring)
-C: 32, 4: Missing method docstring (missing-docstring)
-C: 36, 4: Missing method docstring (missing-docstring)
-C: 44, 0: Missing class docstring (missing-docstring)
-C: 94, 0: Missing class docstring (missing-docstring)
-R: 94, 0: Too few public methods (0/2) (too-few-public-methods)
-C: 99, 0: Missing class docstring (missing-docstring)
+E: 16, 0: invalid syntax (<string>, line 16) (syntax-error)
 ************* Module algorithms.queues.reconstruct_queue
 C:  1, 0: Missing module docstring (missing-docstring)
 C: 25, 8: Variable name "h" doesn't conform to snake_case naming style (invalid-name)
@@ -1296,14 +1233,19 @@ C:  8, 0: Exactly one space required around assignment
 C:  8, 0: Exactly one space required after comma
         self.queue=[_ for _ in (v1,v2) if _]
                                   ^ (bad-whitespace)
+C:  9, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 15, 0: Exactly one space required around assignment
         v=self.queue.pop(0)
          ^ (bad-whitespace)
 C: 16, 0: Exactly one space required around assignment
         ret=v.pop(0)
            ^ (bad-whitespace)
+C: 31, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  1, 0: Missing class docstring (missing-docstring)
+C:  1, 0: Old-style class defined. (old-style-class)
+C:  2, 4: Argument name "v1" doesn't conform to snake_case naming style (invalid-name)
+C:  2, 4: Argument name "v2" doesn't conform to snake_case naming style (invalid-name)
 C: 15, 8: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 17,14: More than one statement on a single line (multiple-statements)
 C: 24,23: More than one statement on a single line (multiple-statements)
@@ -1344,6 +1286,7 @@ C:  7, 8: Variable name "hi" doesn't conform to snake_case naming style (invalid
 C: 14,12: Variable name "lo" doesn't conform to snake_case naming style (invalid-name)
 C: 16,12: Variable name "hi" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.search.jump_search
+W:  5, 0: Cannot decode using encoding "ascii", unexpected byte at position 33 (invalid-encoded-data)
 C:  3, 0: Exactly one space required after comma
 def jump_search(arr,target):
                    ^ (bad-whitespace)
@@ -1405,20 +1348,27 @@ C: 51,12: Variable name "p1" doesn't conform to snake_case naming style (invalid
 ************* Module algorithms.sort
 C:  1, 0: Missing module docstring (missing-docstring)
 W:  1, 0: Wildcard import bitonic_sort (wildcard-import)
+E:  2, 0: Unable to import 'algorithms.sort.bogo_sort' (import-error)
 W:  2, 0: Wildcard import bogo_sort (wildcard-import)
+E:  3, 0: Unable to import 'algorithms.sort.bubble_sort' (import-error)
 W:  3, 0: Wildcard import bubble_sort (wildcard-import)
 W:  4, 0: Wildcard import comb_sort (wildcard-import)
 W:  5, 0: Wildcard import counting_sort (wildcard-import)
 W:  6, 0: Wildcard import cycle_sort (wildcard-import)
+E:  7, 0: Unable to import 'algorithms.sort.heap_sort' (import-error)
 W:  7, 0: Wildcard import heap_sort (wildcard-import)
+E:  8, 0: Unable to import 'algorithms.sort.insertion_sort' (import-error)
 W:  8, 0: Wildcard import insertion_sort (wildcard-import)
 W:  9, 0: Wildcard import merge_sort (wildcard-import)
 W: 10, 0: Wildcard import pancake_sort (wildcard-import)
+E: 11, 0: Unable to import 'algorithms.sort.quick_sort' (import-error)
 W: 11, 0: Wildcard import quick_sort (wildcard-import)
+E: 12, 0: Unable to import 'algorithms.sort.selection_sort' (import-error)
 W: 12, 0: Wildcard import selection_sort (wildcard-import)
 W: 13, 0: Wildcard import top_sort (wildcard-import)
 W: 14, 0: Wildcard import bucket_sort (wildcard-import)
 W: 15, 0: Wildcard import shell_sort (wildcard-import)
+E: 16, 0: Unable to import 'algorithms.sort.radix_sort' (import-error)
 W: 16, 0: Wildcard import radix_sort (wildcard-import)
 W: 17, 0: Wildcard import gnome_sort (wildcard-import)
 W: 18, 0: Wildcard import cocktail_shaker_sort (wildcard-import)
@@ -1443,58 +1393,12 @@ C: 19, 4: Missing function docstring (missing-docstring)
 C: 20, 8: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 31, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.sort.bogo_sort
-C:  9, 0: Trailing whitespace (trailing-whitespace)
-C: 12, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C: 12, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C: 12, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 13, 0: Trailing whitespace (trailing-whitespace)
-C: 22, 0: Trailing whitespace (trailing-whitespace)
-C: 27, 0: Trailing whitespace (trailing-whitespace)
-C: 30, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                             ^ (bad-whitespace)
-C: 30, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 30, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C: 31, 0: Trailing whitespace (trailing-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
-C: 14, 4: Missing function docstring (missing-docstring)
+E: 12, 0: invalid syntax (<string>, line 12) (syntax-error)
 ************* Module algorithms.sort.bubble_sort
-C: 19, 0: Trailing whitespace (trailing-whitespace)
-C: 22, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C: 22, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C: 22, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 23, 0: Trailing whitespace (trailing-whitespace)
-C: 32, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                     ^ (bad-whitespace)
-C: 32, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C: 32, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                                   ^ (bad-whitespace)
-C: 33, 0: Trailing whitespace (trailing-whitespace)
-C: 13, 0: Missing function docstring (missing-docstring)
-C: 14, 4: Missing function docstring (missing-docstring)
-C: 17, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+E: 22, 0: invalid syntax (<string>, line 22) (syntax-error)
 ************* Module algorithms.sort.bucket_sort
 C:  1, 0: Missing module docstring (missing-docstring)
+W:  8,22: Unused variable 'bucket' (unused-variable)
 C: 19, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.sort.cocktail_shaker_sort
 C:  8, 0: Trailing whitespace (trailing-whitespace)
@@ -1509,8 +1413,8 @@ C: 12, 4: Missing function docstring (missing-docstring)
 C: 15, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 23,11: Comparison to False should be 'not expr' or 'expr is False' (singleton-comparison)
 ************* Module algorithms.sort.comb_sort
-C: 10, 0: Missing function docstring (missing-docstring)
 W: 17, 4: Redefining built-in 'sorted' (redefined-builtin)
+C: 10, 0: Missing function docstring (missing-docstring)
 C: 11, 4: Missing function docstring (missing-docstring)
 C: 14, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.sort.counting_sort
@@ -1526,87 +1430,9 @@ C:  1, 0: Missing module docstring (missing-docstring)
 C: 10, 0: Missing function docstring (missing-docstring)
 C: 11, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.sort.heap_sort
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C:  8, 0: Trailing whitespace (trailing-whitespace)
-W: 13, 0: Bad indentation. Found 16 spaces, expected 8 (bad-indentation)
-W: 14, 0: Bad indentation. Found 16 spaces, expected 8 (bad-indentation)
-C: 14, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                 ^ (bad-whitespace)
-C: 14, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C: 14, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C: 40, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                     ^ (bad-whitespace)
-C: 40, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C: 40, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                                   ^ (bad-whitespace)
-C: 53, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C: 53, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C: 53, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 54, 0: Trailing whitespace (trailing-whitespace)
-C: 78, 0: Wrong hanging indentation before block (add 4 spaces).
-                child + 1 + start]:
-                ^   | (bad-continuation)
-C: 80, 0: Trailing whitespace (trailing-whitespace)
-C: 88, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                     ^ (bad-whitespace)
-C: 88, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C: 88, 0: Exactly one space required after comma
-                    print("iteration",iteration,":",*arr)
-                                                   ^ (bad-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
+E:  7, 0: invalid syntax (<string>, line 7) (syntax-error)
 ************* Module algorithms.sort.insertion_sort
-C:  5, 0: Trailing whitespace (trailing-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C:  9, 0: Trailing whitespace (trailing-whitespace)
-C: 13, 0: Trailing whitespace (trailing-whitespace)
-C: 20, 0: Trailing whitespace (trailing-whitespace)
-W: 22, 0: Bad indentation. Found 16 spaces, expected 12 (bad-indentation)
-W: 23, 0: Bad indentation. Found 16 spaces, expected 12 (bad-indentation)
-C: 23, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                 ^ (bad-whitespace)
-C: 23, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C: 23, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
-C: 10, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+E:  8, 0: invalid syntax (<string>, line 8) (syntax-error)
 ************* Module algorithms.sort.merge_sort
 C: 25, 0: Exactly one space required around assignment
             merged[left_cursor+right_cursor]=left[left_cursor]
@@ -1616,76 +1442,11 @@ C:  1, 0: Missing module docstring (missing-docstring)
 C:  8, 0: Trailing whitespace (trailing-whitespace)
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module algorithms.sort.quick_sort
-C:  5, 0: Trailing whitespace (trailing-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C:  8, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 18, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                             ^ (bad-whitespace)
-C: 18, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 18, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C: 19, 0: Trailing whitespace (trailing-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
-C: 12, 0: Missing function docstring (missing-docstring)
-C: 25, 0: Missing function docstring (missing-docstring)
+E:  8, 0: invalid syntax (<string>, line 8) (syntax-error)
 ************* Module algorithms.sort.radix_sort
-C: 11, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C: 11, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C: 11, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 31, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                             ^ (bad-whitespace)
-C: 31, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C: 31, 0: Exactly one space required after comma
-            print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C:  5, 0: Missing function docstring (missing-docstring)
+E: 11, 0: invalid syntax (<string>, line 11) (syntax-error)
 ************* Module algorithms.sort.selection_sort
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                         ^ (bad-whitespace)
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                   ^ (bad-whitespace)
-C:  7, 0: Exactly one space required after comma
-        print("iteration",iteration,":",*arr)
-                                       ^ (bad-whitespace)
-C:  8, 0: Trailing whitespace (trailing-whitespace)
-C: 11, 0: Trailing whitespace (trailing-whitespace)
-C: 18, 0: Trailing whitespace (trailing-whitespace)
-W: 20, 0: Bad indentation. Found 16 spaces, expected 12 (bad-indentation)
-W: 21, 0: Bad indentation. Found 16 spaces, expected 12 (bad-indentation)
-C: 21, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                 ^ (bad-whitespace)
-C: 21, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                           ^ (bad-whitespace)
-C: 21, 0: Exactly one space required after comma
-                print("iteration",iteration,":",*arr)
-                                               ^ (bad-whitespace)
-C: 22, 0: Trailing whitespace (trailing-whitespace)
-C:  1, 0: Missing module docstring (missing-docstring)
-C:  9, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+E:  7, 0: invalid syntax (<string>, line 7) (syntax-error)
 ************* Module algorithms.sort.shell_sort
 C:  8, 0: Trailing whitespace (trailing-whitespace)
 C: 20, 0: Trailing whitespace (trailing-whitespace)
@@ -1693,8 +1454,9 @@ C:  1, 0: Missing module docstring (missing-docstring)
 C:  5, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 12,12: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.sort.sort_colors
-C: 14, 0: Missing function docstring (missing-docstring)
+C: 30, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 W: 14,16: Redefining name 'nums' from outer scope (line 28) (redefined-outer-name)
+C: 14, 0: Missing function docstring (missing-docstring)
 C: 16, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 C: 17, 8: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
 C: 28, 4: Constant name "nums" doesn't conform to UPPER_CASE naming style (invalid-name)
@@ -1717,20 +1479,25 @@ C: 37,12: Variable name "sk" doesn't conform to snake_case naming style (invalid
 C: 51,16: Variable name "sk" doesn't conform to snake_case naming style (invalid-name)
 C: 62,15: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 ************* Module algorithms.sort.wiggle_sort
+C: 12, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 14, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 16, 0: Trailing newlines (trailing-newlines)
 C:  4, 0: Missing function docstring (missing-docstring)
 C:  5, 4: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 C: 10, 4: Constant name "array" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module algorithms.stack
 C:  1, 0: Missing module docstring (missing-docstring)
+E:  1, 0: Unable to import 'algorithms.stack.stack' (import-error)
 W:  1, 0: Wildcard import stack (wildcard-import)
 W:  2, 0: Wildcard import is_consecutive (wildcard-import)
 W:  3, 0: Wildcard import is_sorted (wildcard-import)
 W:  4, 0: Wildcard import remove_min (wildcard-import)
 W:  5, 0: Wildcard import stutter (wildcard-import)
 W:  6, 0: Wildcard import switch_pairs (wildcard-import)
+E:  7, 0: Unable to import 'algorithms.stack.valid_parenthesis' (import-error)
 W:  7, 0: Wildcard import valid_parenthesis (wildcard-import)
 W:  8, 0: Wildcard import simplify_path (wildcard-import)
+E:  9, 0: Unable to import 'algorithms.stack.stack' (import-error)
 W:  9, 0: Wildcard import stack (wildcard-import)
 W:  9, 0: Reimport '*' (imported line 1) (reimported)
 W: 10, 0: Wildcard import ordered_stack (wildcard-import)
@@ -1748,6 +1515,7 @@ C: 15,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as
 C: 18,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 W: 14, 8: Unused variable 'i' (unused-variable)
 ************* Module algorithms.stack.longest_abs_path
+C: 44, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C: 60, 0: Line too long (101/100) (line-too-long)
 C: 60, 0: Exactly one space required before assignment
 st= "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdirectory1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
@@ -1786,6 +1554,7 @@ W: 32, 0: Bad indentation. Found 5 spaces, expected 4 (bad-indentation)
 W: 33, 0: Bad indentation. Found 9 spaces, expected 8 (bad-indentation)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  3, 0: Missing class docstring (missing-docstring)
+C:  3, 0: Old-style class defined. (old-style-class)
 C:  7, 5: Missing method docstring (missing-docstring)
 C: 10, 5: Missing method docstring (missing-docstring)
 C: 13, 5: Missing method docstring (missing-docstring)
@@ -1793,20 +1562,14 @@ C: 24, 5: Missing method docstring (missing-docstring)
 C: 29, 5: Missing method docstring (missing-docstring)
 C: 32, 5: Missing method docstring (missing-docstring)
 ************* Module algorithms.stack.remove_min
-C: 11, 0: Missing function docstring (missing-docstring)
 W: 16, 4: Redefining built-in 'min' (redefined-builtin)
+C: 11, 0: Missing function docstring (missing-docstring)
 C: 13, 7: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 W: 18, 8: Unused variable 'i' (unused-variable)
 ************* Module algorithms.stack.simplify_path
 C: 10, 0: Line too long (101/100) (line-too-long)
 ************* Module algorithms.stack.stack
-C: 29, 4: Missing method docstring (missing-docstring)
-C: 37, 4: Missing method docstring (missing-docstring)
-C: 41, 4: Missing method docstring (missing-docstring)
-C: 45, 4: Missing method docstring (missing-docstring)
-C: 49, 0: Missing class docstring (missing-docstring)
-R: 94, 0: Too few public methods (0/2) (too-few-public-methods)
-C:101, 0: Missing class docstring (missing-docstring)
+E: 17, 0: invalid syntax (<string>, line 17) (syntax-error)
 ************* Module algorithms.stack.stutter
 C: 16, 0: Missing function docstring (missing-docstring)
 W: 18, 8: Unused variable 'i' (unused-variable)
@@ -1824,9 +1587,9 @@ C: 52,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as
 C: 55,11: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 W: 42, 8: Unused variable 'i' (unused-variable)
 ************* Module algorithms.stack.valid_parenthesis
-C:  9, 0: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
-C:  9, 0: Missing function docstring (missing-docstring)
+E:  9, 0: invalid syntax (<string>, line 9) (syntax-error)
 ************* Module algorithms.strings
+W:  2, 0: Redefining built-in 'reduce' (redefined-builtin)
 C:  1, 0: Missing module docstring (missing-docstring)
 W:  1, 0: Wildcard import add_binary (wildcard-import)
 W:  2, 0: Wildcard import breaking_bad (wildcard-import)
@@ -1841,12 +1604,14 @@ W: 10, 0: Wildcard import is_rotated (wildcard-import)
 W: 11, 0: Wildcard import license_number (wildcard-import)
 W: 12, 0: Wildcard import make_sentence (wildcard-import)
 W: 13, 0: Wildcard import merge_string_checker (wildcard-import)
+E: 14, 0: Unable to import 'algorithms.strings.multiply_strings' (import-error)
 W: 14, 0: Wildcard import multiply_strings (wildcard-import)
 W: 15, 0: Wildcard import one_edit_distance (wildcard-import)
 W: 16, 0: Wildcard import rabin_karp (wildcard-import)
 W: 17, 0: Wildcard import reverse_string (wildcard-import)
 W: 18, 0: Wildcard import reverse_vowel (wildcard-import)
 W: 19, 0: Wildcard import reverse_words (wildcard-import)
+E: 20, 0: Unable to import 'algorithms.strings.roman_to_int' (import-error)
 W: 20, 0: Wildcard import roman_to_int (wildcard-import)
 W: 21, 0: Wildcard import strip_url_params (wildcard-import)
 W: 22, 0: Wildcard import validate_coordinates (wildcard-import)
@@ -1873,6 +1638,7 @@ C: 21,12: Variable name "c" doesn't conform to snake_case naming style (invalid-
 C: 23, 8: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 C: 24, 8: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.strings.breaking_bad
+W: 25, 0: Redefining built-in 'reduce' (redefined-builtin)
 C: 28, 0: Missing function docstring (missing-docstring)
 C: 31, 8: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 C: 32,12: Variable name "c" doesn't conform to snake_case naming style (invalid-name)
@@ -1882,6 +1648,7 @@ W: 41,34: Lambda may not be necessary (unnecessary-lambda)
 W: 60,-1: String statement has no effect (pointless-string-statement)
 C: 65, 8: Attribute name "c" doesn't conform to snake_case naming style (invalid-name)
 C: 63, 0: Missing class docstring (missing-docstring)
+C: 63, 0: Old-style class defined. (old-style-class)
 R: 63, 0: Too few public methods (0/2) (too-few-public-methods)
 C: 69, 0: Missing function docstring (missing-docstring)
 C: 71, 8: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
@@ -1952,8 +1719,8 @@ C: 53, 0: Argument name "m" doesn't conform to snake_case naming style (invalid-
 C: 53, 0: Missing function docstring (missing-docstring)
 C: 54, 4: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.strings.group_anagrams
-C: 15, 0: Missing function docstring (missing-docstring)
 W: 19, 8: Redefining built-in 'str' (redefined-builtin)
+C: 15, 0: Missing function docstring (missing-docstring)
 C: 16, 4: Variable name "d" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.strings.int_to_roman
 W: 11, 0: Unnecessary semicolon (unnecessary-semicolon)
@@ -2005,8 +1772,8 @@ C:  2, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.strings.make_sentence
 C: 15, 0: Constant name "count" doesn't conform to UPPER_CASE naming style (invalid-name)
 C: 18, 0: Missing function docstring (missing-docstring)
-C: 19, 4: Constant name "count" doesn't conform to UPPER_CASE naming style (invalid-name)
 W: 19, 4: Using the global statement (global-statement)
+C: 19, 4: Constant name "count" doesn't conform to UPPER_CASE naming style (invalid-name)
 C: 20, 7: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 ************* Module algorithms.strings.merge_string_checker
 C:  2, 0: Trailing whitespace (trailing-whitespace)
@@ -2020,14 +1787,7 @@ C: 30, 0: Missing function docstring (missing-docstring)
 C: 33,16: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
 C: 33,20: Variable name "p2" doesn't conform to snake_case naming style (invalid-name)
 ************* Module algorithms.strings.multiply_strings
-C: 15, 0: Exactly one space required after :
-def multiply(num1:"str", num2:"str")->"str":
-                 ^ (bad-whitespace)
-C: 15, 0: Exactly one space required after :
-def multiply(num1:"str", num2:"str")->"str":
-                             ^ (bad-whitespace)
-C: 15, 0: Missing function docstring (missing-docstring)
-W: 16, 4: Unused variable 'carry' (unused-variable)
+E: 15, 0: invalid syntax (<string>, line 15) (syntax-error)
 ************* Module algorithms.strings.one_edit_distance
 C:  6, 0: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
 C:  6, 0: Argument name "t" doesn't conform to snake_case naming style (invalid-name)
@@ -2042,12 +1802,14 @@ C: 28, 4: Consider using enumerate instead of iterating with range and len (cons
 C: 48, 0: Trailing newlines (trailing-newlines)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  4, 0: Missing class docstring (missing-docstring)
+C:  4, 0: Old-style class defined. (old-style-class)
 C: 20, 4: Missing method docstring (missing-docstring)
 C: 29, 4: Missing method docstring (missing-docstring)
 C: 32, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.strings.repeat_string
+W:  6, 0: Cannot decode using encoding "ascii", unexpected byte at position 46 (invalid-encoded-data)
 C:  2, 0: Line too long (146/100) (line-too-long)
-C:  6, 0: Line too long (149/100) (line-too-long)
+C:  6, 0: Line too long (153/100) (line-too-long)
 C: 17, 0: Unnecessary parens after 'not' keyword (superfluous-parens)
 C: 19, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C: 13, 0: Argument name "A" doesn't conform to snake_case naming style (invalid-name)
@@ -2071,19 +1833,15 @@ C:  1, 0: Missing module docstring (missing-docstring)
 C:  2, 0: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
 C:  2, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.strings.reverse_words
+C: 19, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+C: 20, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
 C:  1, 0: Missing module docstring (missing-docstring)
 C:  2, 0: Missing function docstring (missing-docstring)
 C:  9, 0: Missing function docstring (missing-docstring)
 C: 11, 4: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
 C: 18, 4: Constant name "test" doesn't conform to UPPER_CASE naming style (invalid-name)
 ************* Module algorithms.strings.roman_to_int
-C:  7, 0: Exactly one space required after :
-def roman_to_int(s:"str")->"int":
-                  ^ (bad-whitespace)
-C:  7, 0: Argument name "s" doesn't conform to snake_case naming style (invalid-name)
-C:  7, 0: Missing function docstring (missing-docstring)
-W:  9, 4: Redefining name 'roman' from outer scope (line 19) (redefined-outer-name)
-C: 19, 4: Constant name "roman" doesn't conform to UPPER_CASE naming style (invalid-name)
+E:  7, 0: invalid syntax (<string>, line 7) (syntax-error)
 ************* Module algorithms.strings.strip_url_params
 C: 15, 0: Trailing whitespace (trailing-whitespace)
 C: 47, 0: Unnecessary parens after 'not' keyword (superfluous-parens)
@@ -2092,8 +1850,10 @@ C: 87, 0: Trailing whitespace (trailing-whitespace)
 C: 90, 0: Trailing whitespace (trailing-whitespace)
 C: 94, 0: Trailing whitespace (trailing-whitespace)
 C: 95, 0: Final newline missing (missing-final-newline)
-C: 14, 0: Missing function docstring (missing-docstring)
+E: 11, 0: No name 'parse' in module 'urllib' (no-name-in-module)
+E: 11, 0: Unable to import 'urllib.parse' (import-error)
 W: 40,12: Redefining built-in 'dict' (redefined-builtin)
+C: 14, 0: Missing function docstring (missing-docstring)
 R: 18, 4: Too many nested blocks (8/5) (too-many-nested-blocks)
 R: 18, 4: Too many nested blocks (8/5) (too-many-nested-blocks)
 R: 14, 0: Too many branches (20/12) (too-many-branches)
@@ -2101,6 +1861,9 @@ W: 71, 0: Dangerous default value [] as argument (dangerous-default-value)
 C: 71, 0: Missing function docstring (missing-docstring)
 C: 85, 0: Missing function docstring (missing-docstring)
 C: 86,18: More than one statement on a single line (multiple-statements)
+E: 88,12: Module 'urllib' has no 'parse' member (no-member)
+E: 89,12: Module 'urllib' has no 'parse' member (no-member)
+E: 92,12: Module 'urllib' has no 'parse' member (no-member)
 ************* Module algorithms.strings.strong_password
 C:  3, 0: Line too long (101/100) (line-too-long)
 C: 11, 0: Line too long (115/100) (line-too-long)
@@ -2138,6 +1901,7 @@ C: 39, 0: Missing function docstring (missing-docstring)
 C: 48, 0: Function name "is_valid_coordinates_regular_expression" doesn't conform to snake_case naming style (invalid-name)
 C: 48, 0: Missing function docstring (missing-docstring)
 ************* Module algorithms.strings.word_squares
+W:  6, 0: Cannot decode using encoding "ascii", unexpected byte at position 10 (invalid-encoded-data)
 C: 67, 0: Trailing newlines (trailing-newlines)
 C:  1, 0: Missing module docstring (missing-docstring)
 C: 47, 0: Missing function docstring (missing-docstring)
@@ -2146,9 +1910,13 @@ C: 54, 4: Missing function docstring (missing-docstring)
 C: 59, 8: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
 ************* Module algorithms.unix
 C:  1, 0: Missing module docstring (missing-docstring)
+E:  1, 0: Unable to import 'algorithms.unix.path.join_with_slash' (import-error)
 W:  1, 0: Wildcard import path.join_with_slash (wildcard-import)
+E:  2, 0: Unable to import 'algorithms.unix.path.full_path' (import-error)
 W:  2, 0: Wildcard import path.full_path (wildcard-import)
+E:  3, 0: Unable to import 'algorithms.unix.path.split' (import-error)
 W:  3, 0: Wildcard import path.split (wildcard-import)
+E:  4, 0: Unable to import 'algorithms.unix.path.simplify_path' (import-error)
 W:  4, 0: Wildcard import path.simplify_path (wildcard-import)
 ************* Module algorithms.unix.__init__
 R:  1, 0: Similar lines in 2 files
@@ -2202,18 +1970,6 @@ def print_linked_list(head):
 
  (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==algorithms.linkedlist.add_two_numbers:13
-==algorithms.linkedlist.delete_node:8
-import unittest
-
-
-class Node:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
- (duplicate-code)
-R:  1, 0: Similar lines in 2 files
 ==algorithms.linkedlist.kth_to_last:76
 ==algorithms.linkedlist.remove_duplicates:45
     a1 = Node("A")
@@ -2245,34 +2001,7 @@ R:  1, 0: Similar lines in 2 files
     d.next = c2
     c2.next = f
     f.next = g (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==algorithms.sort.bubble_sort:23
-==algorithms.sort.cocktail_shaker_sort:16
-    while swapped:
-        swapped = False
-        for i in range(1, n):
-            if arr[i - 1] > arr[i]:
-                swap(i - 1, i)
-                swapped = True (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==algorithms.queues.queue:107
-==algorithms.stack.stack:108
-        while True:
-            if probe is None:
-                return
-            yield probe.value
-            probe = probe.next
- (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==algorithms.graph.check_digraph_strongly_connected:0
-==algorithms.graph.path_between_two_vertices_in_digraph:0
-from collections import defaultdict
 
-class Graph:
-	def __init__(self,v):
-		self.v = v
-		self.graph = defaultdict(list) (duplicate-code)
-
-------------------------------------------------------------------
-Your code has been rated at 6.08/10 (previous run: 5.22/10, +0.86)
+-----------------------------------
+Your code has been rated at 5.22/10
 
