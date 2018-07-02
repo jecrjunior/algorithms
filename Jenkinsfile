@@ -17,5 +17,10 @@ pipeline {
 	'''
       }
     }
+    stage('Mail It') {
+      steps {
+        sh 'python3 /var/lib/jenkins/workspace/algorithms_final_master-HMR4SQVWMPXTDGR7DR4MHA3BUAXSNJU3TFG575ITVJ3EHQ2KJRFA/sendmail.py'
+      }
+    }
   }
 }
